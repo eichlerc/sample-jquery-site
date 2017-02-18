@@ -1,0 +1,29 @@
+.special {
+  border: 1px green solid;
+}
+
+.kitty {
+  color: red;
+}
+
+/*#home {
+  background-color: red;
+}*/
+.transparent {
+ background: rgba(147, 112, 219, .25);
+}
+
+
+
+.color {
+  background-color: #add8e6;
+}
+
+
+li {
+  width: 200px;
+  height:50px;
+  background-color: rgb(147,112,219);
+  display: inline-block;
+  text-align: center;
+}
