@@ -16,18 +16,40 @@ $('#kitty').toggleClass('kitty');
 });
 
   // NAV
-  $( 'li' ).hover(function() {
+//   $( 'li' ).hover(function() {
+//   $(this).toggleClass('transparent');
+//
+//   });
+//
+//
+// $('.boo').hide();
+//   $('li').click(function(){
+//   $(this).toggleClass('color');
+//   $('span').toggleClass('.boo');
+//   $( 'span' ).toggle( 'slow');
+//   });
+
+
+$('a').on('click', function(){
+  $(this).text('Clicked!');
+});
+
+$('li').on('mouseenter', function(){
   $(this).toggleClass('transparent');
+})
+.on('mouseleave', function(){
+  $(this).toggleClass('transparent');
+})
+.on('click', function(event){
+  var a = event.target.children;
 
-  });
-
-
-$('.boo').hide();
-  $('li').click(function(){
+  $(a).css('color', 'green');
   $(this).toggleClass('color');
-  $('span').toggleClass('.boo');
-  $( 'span' ).toggle( 'slow');
-  });
+})
+
+;
+
+
 
 
 
